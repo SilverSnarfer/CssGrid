@@ -1,0 +1,24 @@
+body {
+    color: white;
+    background-color: darkslategrey;
+    text-align: center;
+}
+#content {
+    display: grid;
+    /* grid-template-columns: 33.3% 33.3% 33.3%; */
+            /* we can use the 'fr' unit to represent size.  */
+    /* grid-template-columns: 1fr 2fr 1fr;   */
+            /* we can also use the 'repeat(times, measurement)' function to repeat a measurement n times */
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#content div {
+    background: black;
+    padding: 20px;
+}
+
+#content div:nth-child(even) {
+    background: grey
+}
